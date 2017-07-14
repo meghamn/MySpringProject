@@ -2,10 +2,7 @@ package com.src.Service.impl;
 import java.sql.*;
 
 import com.src.Service.DbConnection;
-/**
- * @author Samith.Jagannath
- *
- */
+
 public class DbConnectionImpl implements DbConnection{
 		static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 		static final String DB_URL = "jdbc:mysql://trainingdb.c4hhsbxtkfor.ap-south-1.rds.amazonaws.com:3306/trainingTable";

@@ -1,10 +1,7 @@
 package com.src.Service;
 import java.sql.Connection;
 import java.sql.SQLException;
-/**
- * @author Samith.Jagannath
- *
- */
+
 public interface DBlibrary {
 	
 	

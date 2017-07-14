@@ -7,10 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.src.Service.DBlibrary;
 import com.src.Service.DbConnection;
-/**
- * @author Samith.Jagannath
- *
- */
+
 public class MainClass {
 	private static ApplicationContext ctx;
 	
@@ -30,13 +27,13 @@ public class MainClass {
 		
 		Connection connection;
 		
-		String createQuery= "Create table SamithJ("+
+		String createQuery= "Create table megha("+
 							"emp_id integer not null,"+
 							"name varchar(30));";
-		String insertQuery= "insert into SamithJ values"+
-							"(1,'Samith');";
-		String deleteQuery= "Delete from SamithJ where emp_id = 1";
-		String dropTable = 	"drop table SamithJ";
+		String insertQuery= "insert into megha values"+
+							"(1,'megha');";
+		String deleteQuery= "Delete from megha where emp_id = 1";
+		String dropTable = 	"drop table megha";
 		
 		dbConnection.registerConnection();
 		connection = dbConnection.makeConnection();
@@ -48,9 +45,5 @@ public class MainClass {
 		connection = dbConnection.makeConnection();
 		dBlibrary.deleteQuery(deleteQuery, connection);
 	
-		
-		
-		
-		
-	}
+		}
 }
